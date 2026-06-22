@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ELITE Online Comunicaciones — Internet de fibra óptica para hogar y empresa</title>
+  <meta name="description" content="Internet de fibra óptica de alta velocidad y confiable para hogares y empresas. Seguridad informática, data center, cableado estructurado, migraciones a la nube y rastreo GPS KRONOX. La siguiente generación de infraestructura de internet." />
+  <meta name="theme-color" content="#060b16" />
+
+  <!-- Open Graph / social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="ELITE Online Comunicaciones — Conectividad de élite" />
+  <meta property="og:description" content="Internet de fibra óptica de alta velocidad para hogar y empresa. Conectividad fluida, segura y escalable." />
+  <meta property="og:image" content="assets/img/og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Datos estructurados para SEO local (Google) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "ELITE Online Comunicaciones",
+    "description": "Internet de fibra óptica para hogar y empresa, seguridad informática, data center, cableado estructurado, migraciones a la nube y rastreo GPS.",
+    "telephone": "+573138903717",
+    "email": "info@eliteonline.com.co",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Calle 69 Bis A # 68 F - 44",
+      "addressLocality": "Bogotá",
+      "addressRegion": "Bogotá D.C.",
+      "addressCountry": "CO"
+    },
+    "areaServed": "CO",
+    "openingHours": "Mo-Su 00:00-23:59"
+  }
+  </script>
+
+  <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/img/logo-icon.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=Orbitron:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind (utility layer) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { brand: { DEFAULT: '#22a6ff', cyan: '#41e3ff', deep: '#0b66e4' }, ink: '#060b16' },
+          fontFamily: { display: ['"Exo 2"', 'sans-serif'], body: ['Inter', 'sans-serif'], tech: ['Orbitron', 'sans-serif'] }
+        }
+      }
+    };
+  </script>
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/enhance.css" />
+  <style>:where(section, div)[id] { scroll-margin-top: 88px; }</style>
+</head>
+
+<body>
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:z-[200] focus:top-3 focus:left-3 focus:bg-brand focus:text-ink focus:px-4 focus:py-2 focus:rounded-lg">Saltar al contenido</a>
+
+  <!-- ============================ HEADER ============================ -->
+  <header class="site-header" id="header">
+    <div class="container nav">
+      <a href="#inicio" class="brand" aria-label="ELITE Online Comunicaciones — Inicio">
+        <img src="assets/img/logo.png" alt="ELITE Online Comunicaciones" width="620" height="97" />
+      </a>
+
+      <nav class="nav-links" aria-label="Navegación principal">
+        <a href="#soluciones">Soluciones</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#infraestructura">Infraestructura</a>
+        <a href="#aliados">Aliados</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="seg" role="group" aria-label="Selecciona tu perfil">
+          <span class="seg-thumb" aria-hidden="true"></span>
+          <button type="button" data-aud="hogar" aria-pressed="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg>
+            Hogar
+          </button>
+          <button type="button" data-aud="empresa" aria-pressed="false">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M10 6h4M10 10h4M10 14h4"/></svg>
+            Empresa
+          </button>
+        </div>
+        <a href="#contacto" class="btn btn-primary btn-sm">Contáctanos</a>
+        <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <button class="burger" id="burgerClose" aria-label="Cerrar menú" style="position:absolute;top:1.1rem;right:1.1rem;">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <a href="#soluciones">Soluciones</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#infraestructura">Infraestructura</a>
+    <a href="#datacenter">Data Center</a>
+    <a href="#aliados">Aliados</a>
+    <a href="#contacto">Contacto</a>
+    <a href="#contacto" class="btn btn-primary" style="margin-top:1rem;">Contáctanos</a>
+  </div>
+
+  <main id="main">
+    <!-- ============================ HERO ============================ -->
+    <section class="hero" id="inicio">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow reveal">La siguiente generación de internet</span>
+          <h1 class="reveal d1">Conectividad de fibra <span class="grad-text">sin límites</span> para tu hogar y tu empresa</h1>
+          <p class="lead reveal d2">Internet de alta velocidad y confiable, impulsado por infraestructura de fibra óptica de última generación. Soluciones fluidas, seguras y escalables — donde las necesites.</p>
+          <div class="hero-cta reveal d3">
+            <a href="#soluciones" class="btn btn-primary" data-aud-cta="hogar">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg>
+              <span data-aud-label>Internet para mi hogar</span>
+            </a>
+            <a href="#servicios" class="btn btn-ghost">Ver servicios</a>
+          </div>
+          <div class="hero-trust reveal d4">
+            <div class="t-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#41e3ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+              <div><div class="t-num" data-count="99.9" data-suffix="%">99.9%</div><div class="t-label">Disponibilidad<br>garantizada</div></div>
+            </div>
+            <div class="t-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#41e3ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              <div><div class="t-num" data-count="10" data-suffix="+ Tbps">10+ Tbps</div><div class="t-label">Capacidad de<br>conectividad</div></div>
+            </div>
+            <div class="t-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#41e3ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              <div><div class="t-num">24/7</div><div class="t-label">Soporte técnico<br>especializado</div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal d3">
+          <div class="hero-card glass float">
+            <div class="eyebrow" style="justify-content:center;margin-bottom:.4rem;">Fibra simétrica</div>
+            <div class="speed-ring" id="speedRing">
+              <svg viewBox="0 0 160 160" aria-hidden="true">
+                <defs><linearGradient id="spd" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#41e3ff"/><stop offset="1" stop-color="#0b66e4"/></linearGradient></defs>
+                <circle class="track" cx="80" cy="80" r="70"/>
+                <circle class="bar" cx="80" cy="80" r="70" id="speedBar"/>
+              </svg>
+              <div class="spd-val"><div class="spd-num" id="speedNum">900</div><div class="spd-unit">Mbps</div></div>
+            </div>
+            <ul>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Velocidad de carga y descarga simétrica</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Baja latencia para gaming y videollamadas</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> WiFi inteligente en todo el lugar</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container hero-trusted reveal d5">
+        <span class="ht-label">Trabajamos con</span>
+        <span class="ht-list">Claro · Tigo · Movistar · UNE · ufinet · Starlink · AWS</span>
+      </div>
+    </section>
+
+    <!-- ========================= AUDIENCE SPLIT ====================== -->
+    <section class="section" id="soluciones">
+      <div class="container">
+        <div class="section-head center reveal">
+          <span class="eyebrow center">¿Qué necesitas conectar?</span>
+          <h2 class="h2" style="margin:.8rem 0;">Elige tu experiencia <span class="grad-text">ELITE</span></h2>
+          <p class="lead">Una sola red de élite, dos soluciones a la medida. Conectividad pensada para la vida en casa y para la exigencia de tu negocio.</p>
+        </div>
+        <div class="audience-grid">
+          <article class="aud-card glass reveal d1" data-aud="hogar">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg></div>
+            <h3>Internet Hogar</h3>
+            <p>Fibra óptica ultrarrápida y estable para tu casa. Streaming en 4K, gaming sin lag y videollamadas perfectas para toda la familia.</p>
+            <div class="feat">
+              <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2 3 14h9l-1 8 10-12h-9z"/></svg> Alta velocidad</span>
+              <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg> Estable</span>
+              <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.55a11 11 0 0 1 14.08 0M1.42 9a16 16 0 0 1 21.16 0M8.53 16.11a6 6 0 0 1 6.95 0M12 20h.01"/></svg> Siempre conectado</span>
+            </div>
+            <a href="#contacto" class="btn btn-primary btn-block" style="margin-top:.6rem;" data-prefill="Hogar">Ver planes hogar</a>
+          </article>
+
+          <article class="aud-card glass reveal d2" data-aud="empresa">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M10 6h4M10 10h4M10 14h4M10 18h4"/></svg></div>
+            <h3>Soluciones Empresariales</h3>
+            <p>Conectividad dedicada, segura y escalable para tu operación. Canales redundantes, SLA garantizado y soporte prioritario 24/7.</p>
+            <div class="feat">
+              <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg> Alto rendimiento</span>
+              <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Seguro</span>
+              <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><rect x="7" y="10" width="3" height="7"/><rect x="14" y="6" width="3" height="11"/></svg> Escalable</span>
+            </div>
+            <a href="#contacto" class="btn btn-primary btn-block" style="margin-top:.6rem;" data-prefill="Empresa">Hablar con ventas</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ SERVICES ========================= -->
+    <section class="section" id="servicios" style="background:var(--bg-alt);border-block:1px solid var(--border);">
+      <div class="container">
+        <div class="section-head center reveal">
+          <span class="eyebrow center">Servicios</span>
+          <h2 class="h2" style="margin:.8rem 0;">Todo lo que tu operación necesita, <span class="grad-text">en un solo aliado</span></h2>
+          <p class="lead">Desde la fibra que llega a tu puerta hasta la nube donde vive tu negocio. Un ecosistema completo de telecomunicaciones e infraestructura TI.</p>
+        </div>
+        <div class="svc-grid">
+          <article class="svc-card glass reveal d1">
+            <div class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0M1.42 9a16 16 0 0 1 21.16 0M8.53 16.11a6 6 0 0 1 6.95 0M12 20h.01"/></svg></div>
+            <h3>Internet de Fibra Óptica</h3>
+            <p>Conexión simétrica ultrarrápida y estable para hogares y empresas, sobre red de fibra de última generación.</p>
+            <div class="svc-tags"><span>Hogar</span><span>Empresa</span><span>Simétrico</span></div>
+          </article>
+
+          <article class="svc-card glass reveal d2">
+            <div class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div>
+            <h3>Seguridad Informática</h3>
+            <p>Protección perimetral y de endpoints con tecnología líder Fortinet y Sophos. Tu operación, blindada de extremo a extremo.</p>
+            <div class="svc-tags"><span>Fortinet</span><span>Sophos</span><span>Firewall</span></div>
+          </article>
+
+          <article class="svc-card glass reveal d3">
+            <div class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><path d="M6 6h.01M6 18h.01"/></svg></div>
+            <h3>Servicios de Data Center</h3>
+            <p>Alojamiento, respaldo y conectividad de alta velocidad con 99.9% de disponibilidad garantizada y monitoreo 24/7.</p>
+            <div class="svc-tags"><span>Hosting</span><span>Backup</span><span>99.9%</span></div>
+          </article>
+
+          <article class="svc-card glass reveal d1">
+            <div class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9V5a2 2 0 0 1 2-2h2M4 15v4a2 2 0 0 0 2 2h2M20 9V5a2 2 0 0 0-2-2h-2M20 15v4a2 2 0 0 1-2 2h-2"/><path d="M8 12h8"/><circle cx="8" cy="12" r="1"/><circle cx="16" cy="12" r="1"/></svg></div>
+            <h3>Cableado Estructurado</h3>
+            <p>Diseño e instalación certificada para una infraestructura física impecable, ordenada y lista para escalar.</p>
+            <div class="svc-tags"><span>Panduit</span><span>SYSTIMAX</span><span>Leviton</span></div>
+          </article>
+
+          <article class="svc-card glass reveal d2">
+            <div class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19a4.5 4.5 0 0 0 0-9 6 6 0 0 0-11.6-1.5A4 4 0 0 0 6 19z"/><path d="M12 13v8M8 17l4 4 4-4"/></svg></div>
+            <h3>Migraciones a la Nube</h3>
+            <p>Llevamos tu operación a la nube (AWS, Odoo, Moodle) con planes de recuperación ante desastres (DRP) a la medida.</p>
+            <div class="svc-tags"><span>AWS</span><span>Odoo</span><span>DRP</span></div>
+          </article>
+
+          <article class="svc-card glass feature reveal d3">
+            <div class="svc-ic" style="color:#fff;background:var(--grad-brand);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg></div>
+            <h3>KRONOX · Rastreo GPS</h3>
+            <p>Plataforma de monitoreo y control de flota en tiempo real. Gana visibilidad total: ubicación, rutas, alertas e informes.</p>
+            <div class="svc-tags"><span>GPS</span><span>Tiempo real</span><span>Flotas</span></div>
+            <a href="#contacto" class="svc-link" data-prefill="KRONOX (rastreo GPS)">Conocer KRONOX <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= CÓMO FUNCIONA ======================= -->
+    <section class="section" id="como-funciona">
+      <div class="container">
+        <div class="section-head center reveal">
+          <span class="eyebrow center">Cómo funciona</span>
+          <h2 class="h2" style="margin:.8rem 0;">Conectarte es <span class="grad-text">así de fácil</span></h2>
+          <p class="lead">De la solicitud a navegar sin límites, en tres pasos simples.</p>
+        </div>
+        <div class="steps">
+          <div class="step glass reveal d1">
+            <div class="step-num">1</div>
+            <div class="step-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1"/><path d="m9 14 2 2 4-4"/></svg></div>
+            <h3>Eliges tu plan</h3>
+            <p>Cuéntanos si es para tu hogar o tu empresa y elegimos juntos la solución ideal.</p>
+          </div>
+          <div class="step glass reveal d2">
+            <div class="step-num">2</div>
+            <div class="step-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
+            <h3>Instalación profesional</h3>
+            <p>Agendamos e instalamos tu fibra con técnicos certificados, sin complicaciones.</p>
+          </div>
+          <div class="step glass reveal d3">
+            <div class="step-num">3</div>
+            <div class="step-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg></div>
+            <h3>Navega sin límites</h3>
+            <p>Disfruta tu conexión de élite con soporte 24/7 siempre que lo necesites.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SPEED PLAYGROUND (interactivo) ========== -->
+    <section class="section speedlab" id="velocidad">
+      <div class="container">
+        <div class="section-head center reveal">
+          <span class="eyebrow center">Experiencia ELITE</span>
+          <h2 class="h2" style="margin:.8rem 0;">¿Qué puedes hacer con tu <span class="grad-text">velocidad</span>?</h2>
+          <p class="lead">Mueve el control y descubre en vivo lo que la fibra simétrica de ELITE hace por ti. Sin letra pequeña.</p>
+        </div>
+
+        <div class="sl-grid reveal d1">
+          <!-- Control interactivo -->
+          <div class="sl-control glass">
+            <div class="sl-gauge">
+              <svg viewBox="0 0 160 160" aria-hidden="true">
+                <defs><linearGradient id="slspd" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#41e3ff"/><stop offset="1" stop-color="#0b66e4"/></linearGradient></defs>
+                <circle class="sl-track" cx="80" cy="80" r="70"/>
+                <circle class="sl-bar" cx="80" cy="80" r="70" id="slBar"/>
+              </svg>
+              <div class="sl-gauge-val"><div class="sl-num" id="slNum">900</div><div class="sl-unit">Mbps</div></div>
+            </div>
+            <label class="sl-slabel" for="slRange">Desliza para elegir tu velocidad</label>
+            <input class="sl-range" id="slRange" type="range" min="100" max="900" step="50" value="900" aria-label="Velocidad en megabits por segundo" />
+            <div class="sl-tiers" role="group" aria-label="Velocidades sugeridas">
+              <button type="button" class="sl-tier" data-mbps="200">200</button>
+              <button type="button" class="sl-tier" data-mbps="400">400</button>
+              <button type="button" class="sl-tier" data-mbps="600">600</button>
+              <button type="button" class="sl-tier is-on" data-mbps="900">900</button>
+            </div>
+            <p class="sl-note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/></svg> Carga y descarga a la misma velocidad. Eso es simétrico.</p>
+          </div>
+
+          <!-- Resultados en vivo -->
+          <div class="sl-out">
+            <article class="sl-card glass">
+              <div class="sl-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="18" rx="2"/><path d="M7 3v18M17 3v18M2 8h5M2 12h5M2 16h5M17 8h5M17 12h5M17 16h5"/></svg></div>
+              <div class="sl-v" data-out="movie">2.1 min</div>
+              <div class="sl-l">Película en 4K</div>
+              <div class="sl-s">≈ 14 GB de descarga</div>
+            </article>
+            <article class="sl-card glass">
+              <div class="sl-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="11" x2="10" y2="11"/><line x1="8" y1="9" x2="8" y2="13"/><line x1="15" y1="12" x2="15.01" y2="12"/><line x1="18" y1="10" x2="18.01" y2="10"/><rect x="2" y="6" width="20" height="12" rx="2"/></svg></div>
+              <div class="sl-v" data-out="game">12 min</div>
+              <div class="sl-l">Juego AAA completo</div>
+              <div class="sl-s">≈ 80 GB de descarga</div>
+            </article>
+            <article class="sl-card glass">
+              <div class="sl-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="13" rx="2"/><path d="m17 2-5 5-5-5"/></svg></div>
+              <div class="sl-v" data-out="streams">36</div>
+              <div class="sl-l">Streams 4K a la vez</div>
+              <div class="sl-s">sin buffering</div>
+            </article>
+            <article class="sl-card glass">
+              <div class="sl-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0M1.42 9a16 16 0 0 1 21.16 0M8.53 16.11a6 6 0 0 1 6.95 0M12 20h.01"/></svg></div>
+              <div class="sl-v" data-out="devices">60</div>
+              <div class="sl-l">Dispositivos conectados</div>
+              <div class="sl-s">sin perder velocidad</div>
+            </article>
+            <article class="sl-card glass">
+              <div class="sl-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 13v8"/><path d="m8 17 4-4 4 4"/><path d="M20.88 18.09A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.29"/></svg></div>
+              <div class="sl-v" data-out="backup">15 min</div>
+              <div class="sl-l">Backup de 100 GB ↑</div>
+              <div class="sl-s">subida simétrica</div>
+            </article>
+            <article class="sl-card glass">
+              <div class="sl-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+              <div class="sl-v" data-out="ping">5 ms</div>
+              <div class="sl-l">Latencia para gaming</div>
+              <div class="sl-s">respuesta inmediata</div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= INFRASTRUCTURE ====================== -->
+    <section class="section" id="infraestructura">
+      <div class="container">
+        <div class="split rev">
+          <div class="infra-copy">
+            <span class="eyebrow reveal">Infraestructura</span>
+            <h2 class="h2 reveal d1" style="margin:.8rem 0 1rem;">Una red robusta de <span class="grad-text">extremo a extremo</span></h2>
+            <p class="lead reveal d2" style="margin-bottom:1.6rem;">Un ecosistema de telecomunicaciones diseñado para ofrecer conectividad segura, escalable y de alto rendimiento en entornos residenciales y empresariales.</p>
+            <div class="node-grid">
+              <div class="node glass reveal d1">
+                <div class="n-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><path d="M12 7v6M12 13l-5 4M12 13l5 4"/></svg></div>
+                <div><h4>Red troncal de fibra</h4><p>Fibra óptica de alta capacidad que garantiza conectividad confiable y de largo alcance.</p></div>
+              </div>
+              <div class="node glass reveal d2">
+                <div class="n-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg></div>
+                <div><h4>Internet residencial</h4><p>Internet rápido y estable para hogares, con cobertura amplia y tecnología avanzada.</p></div>
+              </div>
+              <div class="node glass reveal d1">
+                <div class="n-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M10 6h4M10 10h4M10 14h4"/></svg></div>
+                <div><h4>Internet empresarial</h4><p>Conectividad dedicada para empresas que exigen velocidad y estabilidad.</p></div>
+              </div>
+              <div class="node glass reveal d2">
+                <div class="n-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><path d="M6 6h.01M6 18h.01"/></svg></div>
+                <div><h4>Centro de datos</h4><p>Almacenamiento, procesamiento y gestión de datos críticos, seguros y eficientes.</p></div>
+              </div>
+              <div class="node glass reveal d1">
+                <div class="n-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0M1.42 9a16 16 0 0 1 21.16 0M8.53 16.11a6 6 0 0 1 6.95 0M12 20h.01"/></svg></div>
+                <div><h4>Soluciones WiFi</h4><p>Redes inalámbricas inteligentes para conectividad fluida en cualquier lugar.</p></div>
+              </div>
+              <div class="node glass reveal d2">
+                <div class="n-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg></div>
+                <div><h4>Soporte técnico 24/7</h4><p>Equipo de expertos disponible 24/7 para brindar soporte rápido y eficiente.</p></div>
+              </div>
+            </div>
+          </div>
+          <div class="media-frame reveal d2">
+            <img src="assets/img/bg-network.webp" alt="Red de telecomunicaciones de ELITE Online conectando hogares y empresas" width="1448" height="1086" loading="lazy" />
+          </div>
+        </div>
+
+        <!-- Stats band -->
+        <div class="stats-band reveal" style="margin-top:3.5rem;">
+          <div class="stats-grid">
+            <div class="stat"><div class="s-num"><span data-count="99.9">0</span><span class="s-suf">%</span></div><div class="s-label">Disponibilidad garantizada</div></div>
+            <div class="stat"><div class="s-num"><span data-count="10">0</span><span class="s-suf">+ Tbps</span></div><div class="s-label">Capacidad de conectividad</div></div>
+            <div class="stat"><div class="s-num"><span data-count="2">0</span></div><div class="s-label">Centros de datos</div></div>
+            <div class="stat"><div class="s-num">24/7</div><div class="s-label">Soporte especializado</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================== DATA CENTER ======================== -->
+    <section class="section" id="datacenter" style="background:var(--bg-alt);border-block:1px solid var(--border);">
+      <div class="container">
+        <div class="split">
+          <div class="media-frame reveal">
+            <img src="assets/img/bg-security.webp" alt="Centro de operaciones de red y seguridad de ELITE Online monitoreando 24/7" width="1600" height="900" loading="lazy" />
+          </div>
+          <div>
+            <span class="eyebrow reveal">Data Center & Seguridad</span>
+            <h2 class="h2 reveal d1" style="margin:.8rem 0 1rem;">Infraestructura de <span class="grad-text">alto rendimiento</span>, siempre protegida</h2>
+            <p class="lead reveal d2" style="margin-bottom:1.8rem;">Soluciones de centros de datos diseñadas para proteger, conectar y potenciar el crecimiento de tu negocio con la máxima disponibilidad y eficiencia.</p>
+            <div class="pillars" style="grid-template-columns:1fr 1fr;">
+              <div class="pillar glass reveal d1">
+                <div class="p-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+                <h4>Seguridad avanzada</h4><p>Protección física y lógica para garantizar la integridad de tus datos.</p>
+              </div>
+              <div class="pillar glass reveal d2">
+                <div class="p-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+                <h4>Alta disponibilidad</h4><p>Infraestructura redundante con monitoreo 24/7 para máxima continuidad.</p>
+              </div>
+              <div class="pillar glass reveal d1">
+                <div class="p-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg></div>
+                <h4>Escalabilidad</h4><p>Recursos flexibles que crecen según las necesidades de tu negocio.</p>
+              </div>
+              <div class="pillar glass reveal d2">
+                <div class="p-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6"/></svg></div>
+                <h4>Eficiencia energética</h4><p>Tecnología de última generación con mejor rendimiento y menor consumo.</p>
+              </div>
+            </div>
+            <div class="benefits reveal d3">
+              <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg> Reducción de costos</span>
+              <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg> Conectividad global</span>
+              <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg> Estándares internacionales</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certifications strip -->
+        <div class="split" style="margin-top:3.5rem;align-items:stretch;">
+          <div class="media-frame reveal" style="min-height:240px;">
+            <img src="assets/img/cabling-1.webp" alt="Cableado estructurado certificado instalado por ELITE Online" width="760" height="507" loading="lazy" style="height:100%;" />
+          </div>
+          <div class="glass reveal d1" style="padding:2rem;display:flex;flex-direction:column;justify-content:center;">
+            <span class="eyebrow">Cableado certificado</span>
+            <h3 class="h3" style="margin:.7rem 0 .8rem;">Infraestructura física que cumple los más altos estándares</h3>
+            <p style="margin-bottom:1.3rem;">Diseño e instalación de cableado estructurado con instaladores certificados por los líderes de la industria. Orden, rendimiento y garantía de fábrica.</p>
+            <div class="feat" style="display:flex;flex-wrap:wrap;gap:.6rem;">
+              <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg> Panduit · PCI</span>
+              <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg> CommScope · SYSTIMAX</span>
+              <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg> Leviton</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ PARTNERS ========================= -->
+    <section class="section" id="aliados">
+      <div class="container">
+        <div class="section-head center reveal">
+          <span class="eyebrow center">Aliados & Tecnología</span>
+          <h2 class="h2" style="margin:.8rem 0;">Respaldados por los <span class="grad-text">mejores del mundo</span></h2>
+          <p class="lead">Integramos a los principales carriers y a la tecnología líder de la industria para entregarte una conectividad sin compromisos.</p>
+        </div>
+      </div>
+      <div class="marquee" style="margin-bottom:1rem;">
+        <div class="marquee-track">
+          <span class="logo-chip"><img src="assets/logos/claro.webp" alt="Claro" loading="lazy" height="30"></span><span class="logo-chip"><img src="assets/logos/tigo.webp" alt="Tigo" loading="lazy" height="30"></span><span class="logo-chip"><img src="assets/logos/movistar.webp" alt="Movistar" loading="lazy" height="30"></span><span class="logo-chip"><img src="assets/logos/ufinet.webp" alt="ufinet" loading="lazy" height="30"></span><span class="logo-chip"><img src="assets/logos/ifx.webp" alt="IFX Networks" loading="lazy" height="30"></span><span class="logo-chip"><img src="assets/logos/internexa.webp" alt="INTERNEXA" loading="lazy" height="30"></span><span class="logo-chip"><img src="assets/logos/starlink.webp" alt="Starlink" loading="lazy" height="30"></span><span class="logo-chip"><img src="assets/logos/globant.webp" alt="Globant" loading="lazy" height="30"></span>
+          <span class="logo-chip"><img src="assets/logos/claro.webp" alt="Claro" loading="lazy" height="30"></span><span class="logo-chip"><img src="assets/logos/tigo.webp" alt="Tigo" loading="lazy" height="30"></span><span class="logo-chip"><img src="assets/logos/movistar.webp" alt="Movistar" loading="lazy" height="30"></span><span class="logo-chip"><img src="assets/logos/ufinet.webp" alt="ufinet" loading="lazy" height="30"></span><span class="logo-chip"><img src="assets/logos/ifx.webp" alt="IFX Networks" loading="lazy" height="30"></span><span class="logo-chip"><img src="assets/logos/internexa.webp" alt="INTERNEXA" loading="lazy" height="30"></span><span class="logo-chip"><img src="assets/logos/starlink.webp" alt="Starlink" loading="lazy" height="30"></span><span class="logo-chip"><img src="assets/logos/globant.webp" alt="Globant" loading="lazy" height="30"></span>
+        </div>
+      </div>
+      <div class="marquee rev">
+        <div class="marquee-track">
+          <span class="logo-chip"><img src="assets/logos/fortinet.webp" alt="Fortinet" loading="lazy" height="30"></span><span class="logo-chip"><img src="assets/logos/sophos.webp" alt="Sophos" loading="lazy" height="30"></span><span class="logo-chip"><img src="assets/logos/aws.webp" alt="AWS" loading="lazy" height="30"></span><span class="logo-chip"><img src="assets/logos/odoo.webp" alt="Odoo" loading="lazy" height="30"></span><span class="logo-chip"><img src="assets/logos/moodle.webp" alt="Moodle" loading="lazy" height="30"></span><span class="logo-chip"><img src="assets/logos/panduit.webp" alt="Panduit" loading="lazy" height="30"></span><span class="logo-chip"><img src="assets/logos/commscope.webp" alt="CommScope" loading="lazy" height="30"></span><span class="logo-chip"><img src="assets/logos/leviton.webp" alt="Leviton" loading="lazy" height="30"></span>
+          <span class="logo-chip"><img src="assets/logos/fortinet.webp" alt="Fortinet" loading="lazy" height="30"></span><span class="logo-chip"><img src="assets/logos/sophos.webp" alt="Sophos" loading="lazy" height="30"></span><span class="logo-chip"><img src="assets/logos/aws.webp" alt="AWS" loading="lazy" height="30"></span><span class="logo-chip"><img src="assets/logos/odoo.webp" alt="Odoo" loading="lazy" height="30"></span><span class="logo-chip"><img src="assets/logos/moodle.webp" alt="Moodle" loading="lazy" height="30"></span><span class="logo-chip"><img src="assets/logos/panduit.webp" alt="Panduit" loading="lazy" height="30"></span><span class="logo-chip"><img src="assets/logos/commscope.webp" alt="CommScope" loading="lazy" height="30"></span><span class="logo-chip"><img src="assets/logos/leviton.webp" alt="Leviton" loading="lazy" height="30"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== EXPERIENCIA (BENTO) ==================== -->
+    <section class="section" id="experiencia">
+      <div class="container">
+        <div class="section-head center reveal">
+          <span class="eyebrow center">Tu mundo conectado</span>
+          <h2 class="h2" style="margin:.8rem 0;">Una conexión, <span class="grad-text">mil posibilidades</span></h2>
+          <p class="lead">Fibra de élite para todo lo que haces — en casa y en tu negocio.</p>
+        </div>
+        <div class="bento">
+          <div class="b-tile b-img reveal" style="background-image:url('assets/img/hero-city.webp');">
+            <div class="b-overlay">
+              <h3>Todo tu mundo digital, sin límites</h3>
+              <p>Una sola red de fibra para tu hogar y tu empresa.</p>
+            </div>
+          </div>
+          <div class="b-tile b-w2 glass reveal d1">
+            <div class="b-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><path d="m10.5 8 4 2.5-4 2.5z"/></svg></div>
+            <h4>Streaming & TV 4K</h4>
+            <p>Sin buffering, en todas tus pantallas a la vez.</p>
+          </div>
+          <div class="b-tile b-w1 glass reveal d2">
+            <div class="b-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" x2="10" y1="11" y2="11"/><line x1="8" x2="8" y1="9" y2="13"/><line x1="15" x2="15.01" y1="12" y2="12"/><line x1="18" x2="18.01" y1="10" y2="10"/><rect x="2" y="6" width="20" height="12" rx="2"/></svg></div>
+            <h4>Gaming sin lag</h4>
+            <p>Baja latencia real.</p>
+          </div>
+          <div class="b-tile b-w1 glass reveal d3">
+            <div class="b-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg></div>
+            <h4>Smart Home</h4>
+            <p>Todos tus dispositivos conectados.</p>
+          </div>
+          <div class="b-tile b-w2 glass reveal d2">
+            <div class="b-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 8-6 4 6 4V8z"/><rect x="2" y="6" width="14" height="12" rx="2"/></svg></div>
+            <h4>Teletrabajo & videollamadas</h4>
+            <p>Subes y bajas a la misma velocidad: cero cortes.</p>
+          </div>
+          <div class="b-tile b-w2 glass reveal d3">
+            <div class="b-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M10 6h4M10 10h4M10 14h4"/></svg></div>
+            <h4>Empresa conectada</h4>
+            <p>Sedes y nube enlazadas, con SLA garantizado.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= WHY US ========================== -->
+    <section class="section" style="background:var(--bg-alt);border-block:1px solid var(--border);">
+      <div class="container">
+        <div class="section-head center reveal">
+          <span class="eyebrow center">¿Por qué ELITE?</span>
+          <h2 class="h2" style="margin:.8rem 0;">La diferencia de trabajar con <span class="grad-text">infraestructura propia</span></h2>
+        </div>
+        <div class="why-grid">
+          <article class="why-card glass reveal d1">
+            <div class="w-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><path d="M12 7v6M12 13l-5 4M12 13l5 4"/></svg></div>
+            <h4>Infraestructura propia</h4><p>Red de fibra y centros de datos propios para el máximo control, rendimiento y disponibilidad.</p>
+          </article>
+          <article class="why-card glass reveal d2">
+            <div class="w-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg></div>
+            <h4>Certificaciones de élite</h4><p>Instaladores certificados Panduit (PCI), CommScope SYSTIMAX y Leviton.</p>
+          </article>
+          <article class="why-card glass reveal d3">
+            <div class="w-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg></div>
+            <h4>Soporte 24/7 real</h4><p>Personas, no robots. Acompañamiento técnico especializado cuando lo necesitas.</p>
+          </article>
+          <article class="why-card glass reveal d4">
+            <div class="w-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+            <h4>Hogar y empresa</h4><p>Soluciones a la medida tanto para residencias como para operaciones empresariales exigentes.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ CONTACT ========================== -->
+    <!-- ⚙️ DATOS EDITABLES: cambia teléfono/WhatsApp, email y ubicación aquí y en assets/js/main.js (CONTACT) -->
+    <section class="section" id="contacto">
+      <div class="container">
+        <div class="section-head center reveal">
+          <span class="eyebrow center">Contacto</span>
+          <h2 class="h2" style="margin:.8rem 0;">Hablemos de tu <span class="grad-text">conexión</span></h2>
+          <p class="lead">Cuéntanos qué necesitas y un asesor ELITE te contactará. Respuesta rápida por WhatsApp, llamada o correo.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <a class="ci-item glass reveal d1 js-wa" href="#" target="_blank" rel="noopener">
+              <div class="ci-ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 0 0 1.51 5.26l-.999 3.648 3.738-.979z"/></svg></div>
+              <div><div class="ci-label">WhatsApp</div><div class="ci-val js-wa-num">+57 313 890 3717</div></div>
+            </a>
+            <a class="ci-item glass reveal d2 js-tel" href="#">
+              <div class="ci-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+              <div><div class="ci-label">Teléfono</div><div class="ci-val js-tel-num">+57 313 890 3717</div></div>
+            </a>
+            <a class="ci-item glass reveal d3 js-mail" href="#">
+              <div class="ci-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg></div>
+              <div><div class="ci-label">Correo</div><div class="ci-val js-mail-addr">info@eliteonline.com.co</div></div>
+            </a>
+            <a class="ci-item glass reveal d4 js-map" href="#" target="_blank" rel="noopener">
+              <div class="ci-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+              <div><div class="ci-label">Dirección</div><div class="ci-val js-address">Calle 69 Bis A # 68 F - 44</div><div class="ci-sub"><span class="js-address-city">Bogotá, Colombia</span> · Ver en mapa →</div></div>
+            </a>
+          </div>
+
+          <form class="form glass reveal d2" id="contactForm" novalidate>
+            <div class="row-2">
+              <div class="field">
+                <label for="f-name">Nombre <span class="req">*</span></label>
+                <input id="f-name" name="name" type="text" autocomplete="name" placeholder="Tu nombre completo" required />
+                <span class="err">Cuéntanos tu nombre.</span>
+              </div>
+              <div class="field">
+                <label for="f-phone">Teléfono / WhatsApp <span class="req">*</span></label>
+                <input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="300 000 0000" required />
+                <span class="err">Necesitamos un número válido (mín. 7 dígitos).</span>
+              </div>
+            </div>
+            <div class="row-2">
+              <div class="field">
+                <label for="f-email">Correo <span class="req">*</span></label>
+                <input id="f-email" name="email" type="email" autocomplete="email" placeholder="tucorreo@ejemplo.com" required />
+                <span class="err">Ingresa un correo válido.</span>
+              </div>
+              <div class="field">
+                <label for="f-type">Tipo de cliente <span class="req">*</span></label>
+                <select id="f-type" name="type" required>
+                  <option value="" disabled selected>Selecciona…</option>
+                  <option value="Hogar">Hogar</option>
+                  <option value="Empresa">Empresa</option>
+                </select>
+                <span class="err">Selecciona una opción.</span>
+              </div>
+            </div>
+            <div class="field">
+              <label for="f-service">Servicio de interés</label>
+              <select id="f-service" name="service">
+                <option value="Internet de Fibra Óptica" selected>Internet de Fibra Óptica</option>
+                <option value="Seguridad Informática">Seguridad Informática</option>
+                <option value="Servicios de Data Center">Servicios de Data Center</option>
+                <option value="Cableado Estructurado">Cableado Estructurado</option>
+                <option value="Migraciones a la Nube">Migraciones a la Nube</option>
+                <option value="KRONOX (rastreo GPS)">KRONOX · Rastreo GPS</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="f-msg">Mensaje</label>
+              <textarea id="f-msg" name="message" placeholder="Cuéntanos qué necesitas, tu dirección o sector…"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24z"/></svg>
+              Enviar por WhatsApp
+            </button>
+            <div class="form-note">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              Tus datos están seguros. Abriremos WhatsApp con tu mensaje listo para enviar.
+            </div>
+            <div class="toast" id="formToast" role="status" aria-live="polite">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+              <span>¡Listo! Abrimos WhatsApp con tu solicitud. Si no se abrió, escríbenos directamente.</span>
+            </div>
+          </form>
+        </div>
+        <div class="contact-map reveal" style="margin-top:1.6rem;">
+          <iframe class="js-map-embed" title="Ubicación de ELITE Online Comunicaciones en el mapa" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================== CTA BAND ======================= -->
+  <section class="cta-band" aria-labelledby="ctaHead">
+    <div class="container">
+      <div class="cta-inner">
+        <div class="cta-copy">
+          <span class="eyebrow">¿Listo para conectar?</span>
+          <h2 id="ctaHead" class="h2" style="margin:.7rem 0 .6rem;">La nueva generación de internet <span class="grad-text">ya está aquí</span></h2>
+          <p class="lead" style="margin:0;">Hogar o empresa: cuéntanos qué necesitas y un asesor ELITE arma tu solución a la medida.</p>
+        </div>
+        <div class="cta-actions">
+          <a href="#contacto" class="btn btn-primary">Solicitar asesoría</a>
+          <a class="btn btn-wa js-wa" href="#" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24z"/></svg>
+            Escríbenos
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= FOOTER ========================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <img src="assets/img/logo.png" alt="ELITE Online Comunicaciones" width="620" height="97" />
+          <p style="font-size:.9rem;max-width:30ch;">La siguiente generación de infraestructura de internet. Conectividad de fibra óptica para hogares y empresas.</p>
+          <div class="socials">
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg></a>
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.22.79 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
+            <a href="#" class="js-wa" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 0 0 1.51 5.26l-.999 3.648 3.738-.979z"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Servicios</h5>
+          <ul>
+            <li><a href="#servicios">Internet de Fibra</a></li>
+            <li><a href="#servicios">Seguridad Informática</a></li>
+            <li><a href="#datacenter">Data Center</a></li>
+            <li><a href="#servicios">Cableado Estructurado</a></li>
+            <li><a href="#servicios">Migraciones a la Nube</a></li>
+            <li><a href="#servicios">KRONOX · Rastreo GPS</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Empresa</h5>
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#soluciones">Soluciones</a></li>
+            <li><a href="#infraestructura">Infraestructura</a></li>
+            <li><a href="#aliados">Aliados</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Contacto</h5>
+          <ul>
+            <li><a class="js-wa" href="#">WhatsApp: <span class="js-wa-num">+57 313 890 3717</span></a></li>
+            <li><a class="js-mail" href="#"><span class="js-mail-addr">info@eliteonline.com.co</span></a></li>
+            <li><a class="js-map" href="#" target="_blank" rel="noopener"><span class="js-address">Calle 69 Bis A # 68 F - 44</span></a></li>
+            <li><span class="js-address-city">Bogotá, Colombia</span> · Atención 24/7</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year">2026</span> ELITE Online Comunicaciones. Todos los derechos reservados.</span>
+        <span>Conectividad de élite para hogar y empresa.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a class="fab-wa js-wa" href="#" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 0 0 1.51 5.26l-.999 3.648 3.738-.979z"/></svg>
+  </a>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/enhance.js"></script>
+</body>
+</html>

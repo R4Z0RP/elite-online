@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Página no encontrada — ELITE Online Comunicaciones</title>
+  <meta name="robots" content="noindex" />
+  <link rel="icon" href="assets/img/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@500;700;800&family=Orbitron:wght@700&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      min-height: 100vh; min-height: 100dvh;
+      display: grid; place-items: center; text-align: center; padding: 2rem;
+      font-family: "Exo 2", system-ui, -apple-system, sans-serif; color: #e8eef7;
+      background: radial-gradient(60% 60% at 50% 0%, rgba(34, 166, 255, 0.18), transparent 60%), #060b16;
+    }
+    .wrap { max-width: 34rem; }
+    .code {
+      font-family: "Orbitron", monospace; font-size: clamp(5rem, 22vw, 9rem); font-weight: 700; line-height: 1;
+      background: linear-gradient(120deg, #41e3ff, #22a6ff 50%, #0b66e4);
+      -webkit-background-clip: text; background-clip: text; color: transparent;
+      text-shadow: 0 0 40px rgba(34, 166, 255, 0.25);
+    }
+    h1 { font-size: clamp(1.3rem, 4vw, 1.8rem); font-weight: 800; margin: 0.6rem 0 0.8rem; }
+    p { color: #9fb0c7; line-height: 1.6; margin-bottom: 1.8rem; }
+    a.btn {
+      display: inline-flex; align-items: center; gap: 0.5rem; font-weight: 700; text-decoration: none; color: #00121f;
+      padding: 0.85rem 1.6rem; border-radius: 14px; background: linear-gradient(120deg, #41e3ff, #0b66e4);
+      box-shadow: 0 10px 30px -10px rgba(34, 166, 255, 0.6); transition: transform 0.2s ease;
+    }
+    a.btn:hover { transform: translateY(-2px); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="code">404</div>
+    <h1>Esta página se perdió en la red</h1>
+    <p>El enlace que buscas no existe o cambió de lugar. Pero tu conexión de élite sigue intacta.</p>
+    <a class="btn" href="/" id="home">&larr; Volver al inicio</a>
+  </div>
+  <script>
+    // Hace que "Volver al inicio" funcione tanto en dominio propio como en la subruta de GitHub Pages
+    (function () {
+      var seg = location.pathname.split("/").filter(Boolean);
+      if (location.hostname.endsWith("github.io") && seg.length) {
+        document.getElementById("home").href = "/" + seg[0] + "/";
+      }
+    })();
+  </script>
+</body>
+</html>

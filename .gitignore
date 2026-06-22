@@ -1,0 +1,16 @@
+# === ELITE Online — sitio estático para GitHub Pages ===
+
+# Design system de React (proyecto aparte, no se publica con el sitio)
+elite-ui/
+
+# Documentos fuente (uso interno, no se publican)
+Presentacion Elite Online.pdf
+assets/logos/ChromeSetup.exe
+
+# Sistema operativo / editores
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.log
+.vscode/
+.idea/
