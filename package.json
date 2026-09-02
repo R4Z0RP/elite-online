@@ -7,9 +7,10 @@
   "scripts": {
     "build": "echo build",
     "start": "node app.js"
+    "dev": "node --watch app.js"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=22"
   },
   "dependencies": {
     "cors": "^2.8.5",
