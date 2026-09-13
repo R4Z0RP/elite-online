@@ -8,17 +8,6 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { createApp } from "./server/src/index.js"; // o la ruta a tu createApp
 
-const app = createApp({
-  staticDir: "public", // o tu carpeta estática
-});
-
-// GoDaddy asigna el puerto mediante la variable PORT
-const PORT = process.env.PORT || 3000;
-
-app.listen(PORT, "0.0.0.0", () => {
-  console.log(`Servidor corriendo exitosamente en el puerto ${PORT}`);
-});
-
 const rootDir = path.dirname(fileURLToPath(import.meta.url));
 
 /* Carga opcional de un archivo .env (solo para desarrollo local).
