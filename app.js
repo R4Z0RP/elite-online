@@ -1,17 +1,14 @@
 /* =====================================================================
    ELITE Online — punto de arranque de la aplicación Node.
-   Este es el "Application startup file" que pide el panel del hosting.
-   Sirve el sitio estático (public/) y la API de leads (/api/*).
    ===================================================================== */
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { createApp } from "./server/src/index.js"; // o la ruta a tu createApp
+import { createApp } from "./server/src/index.js";
 
 const rootDir = path.dirname(fileURLToPath(import.meta.url));
 
-/* Carga opcional de un archivo .env (solo para desarrollo local).
-   En producción las variables se definen en el panel del hosting. */
+// Carga opcional de variables de entorno locales
 function loadEnvFile(file) {
   if (!fs.existsSync(file)) return;
   const lines = fs.readFileSync(file, "utf8").split(/\r?\n/);
@@ -35,11 +32,10 @@ function loadEnvFile(file) {
 
 loadEnvFile(path.join(rootDir, ".env"));
 
-const { createApp } = await import("./server/src/index.js");
-
 const app = createApp({ staticDir: path.join(rootDir, "public") });
 const port = Number(process.env.PORT) || 3000;
 
-app.listen(port, () => {
+// Escuchar en 0.0.0.0 para que el proxy de GoDaddy lo detecte
+app.listen(port, "0.0.0.0", () => {
   console.log(`ELITE Online escuchando en el puerto ${port}`);
 });
